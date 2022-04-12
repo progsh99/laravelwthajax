@@ -5,6 +5,10 @@ use Illuminate\Support\Facades\Route;
 use App\Models\MyItems ;
 
 use Illuminate\Http\Request;
+Route::get('/', function () {
+    $products = MyItems::all();
+    return view('main');
+});
 
 Route::get('productajaxCRUD', function () {
     $products = MyItems::all();
