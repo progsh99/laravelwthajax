@@ -134,7 +134,7 @@ for (const box of boxes) {
 document.getElementById(idm).style.display = 'block'; 
 
 }
-var url = "http://localhost:8000/productajaxCRUD";
+var url = "https://laraveltask0.herokuapp.com/productajaxCRUD";
     //display modal form for product editing
     $(document).on('click','.open_modal',function(){
         var product_id = $(this).val();
